@@ -60,7 +60,7 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: isSwitch ? Colors.green : Colors.blue,
+                backgroundColor: isSwitch ? Colors.green : Colors.blue,
               ),
               onPressed: () {
                 debugPrint('Elevated Button');
