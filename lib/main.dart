@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.red),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const RootPage(),
     );
   }
@@ -36,12 +36,12 @@ class _RootPageState extends State<RootPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.yellow[900],
+        backgroundColor: Colors.blue,
         title: const Text('Flutter'),
       ),
       body: pages[currentPage],
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.green[900],
+        backgroundColor: Colors.blue,
         onPressed: () {
           debugPrint('Floating Action button');
         },
